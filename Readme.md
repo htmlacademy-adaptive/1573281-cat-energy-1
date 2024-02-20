@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Александр Белошапкин](https://up.htmlacademy.ru/adaptive-individual/1/user/1573281).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Изосимов](https://htmlacademy.ru/profile/id605037)
 
 ---
 
