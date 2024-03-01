@@ -2,16 +2,18 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Подбор программы питания для кота | Кэт энерджи</title>
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo-link" href="index.html">
-          <img class="main-header__logo-img" src="#" width="33" height="38" alt="Логотип Cat Energy.">
-          <img class="main-header__logo-text logo-text" src="#" width="101" height="18" alt="Текст логотипа.">
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="header__logo-link" href="index.html">
+          <img class="header__logo-img" src="#" width="33" height="38" alt="Логотип Cat Energy.">
+          <img class="header__logo-text logo-text" src="#" width="101" height="18" alt="Текст логотипа.">
         </a>
-        <nav class="main-header__nav site-navigation">
+        <nav class="header__nav site-navigation">
           <ul class="site-navigation__list">
             <li class="site-navigation__item">
               <a class="site-navigation__link site-navigation__link" href="index.html">Главная</a>
@@ -24,16 +26,16 @@
             </li>
           </ul>
         </nav>
-        <button class="main-header__button-toggle button-toggle button-toggle--is-closed" type="button">
+        <button class="header__button-toggle button-toggle button-toggle--is-closed" type="button">
           <span class="visually-hidden">Кнопка управления меню</span>
         </button>
       </div>
     </header>
-    <main class="main-content">
-      <div class="main-content__wrapper">
-        <h1 class="main-content__title">Подбор программы</h1>
-        <p class="main-content__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="main-content__form form" action="https://echo.htmlacademy.ru" method="post">
+    <main class="main">
+      <div class="main__wrapper">
+        <h1 class="main__title">Подбор программы</h1>
+        <p class="main__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="main__form form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__fildset cat-info">
             <legend class="visually-hidden">Информация о кошке</legend>
             <label class="cat-info__label" for="cat-name">Имя:*</label>
@@ -61,7 +63,7 @@
           </fieldset>
           <fieldset class="form__fildset comments">
             <legend class="comments__legend">Комментарий</legend>
-            <textarea class="comments__textarea" name="commetns" cols="30" rows="10">Расскажите обо всех повАдках кота</textarea>
+            <textarea class="comments__textarea" name="commetns" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
           </fieldset>
           <fieldset class="form__fildset additionally">
             <legend class="additionally__legend">Дополнительно</legend>
@@ -77,7 +79,7 @@
           <input class="form__submit-button button" type="submit" value="Отправить заявку">
         </form>
       </div>
-      <section class="main-content__invite invite">
+      <section class="main__invite invite">
         <div class="invite__wrapper">
           <h2 class="invite__title">Приглашаем к сотрудничеству дилеров!</h2>
           <address class="invite__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
@@ -85,12 +87,12 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <a class="main-footer__logo" href="index.html">
-          <img class="main-footer__logo-text logo-text" src="#" width="101" height="18" alt="Cat Energy.">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__logo" href="index.html">
+          <img class="footer__logo-text logo-text" src="#" width="101" height="18" alt="Cat Energy.">
         </a>
-        <ul class="main-footer__socials-list socials">
+        <ul class="footer__socials-list socials">
           <li class="socials__item">
             <a class="socials__link socials__link--vkontakte" href="#">
               <span class="visually-hidden">Вконтакте</span>
@@ -107,8 +109,8 @@
             </a>
           </li>
         </ul>
-        <div class="main-footer__develop">
-          <a class="main-footer__develop-logo" href="#">
+        <div class="footer__develop">
+          <a class="footer__develop-logo" href="#">
             <span class="main-footer__develop-name">HTML Academy</span>
             <span class="visually-hidden">Разработано HTML Academy</span>
           </a>

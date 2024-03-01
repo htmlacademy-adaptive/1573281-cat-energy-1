@@ -2,44 +2,46 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Интернет-магазин кошачьего питания | Кэт энерджи</title>
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo-link">
-          <img class="main-header__logo-img" src="#" width="33" height="38" alt="Логотип Cat Energy.">
-          <img class="main-header__logo-text logo-text" src="#" width="101" height="18" alt="Текст логотипа.">
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="header__logo-link">
+          <img class="header__logo-img" src="#" width="33" height="38" alt="Логотип Cat Energy.">
+          <img class="header__logo-text logo-text" src="#" width="101" height="18" alt="Текст логотипа.">
         </a>
-        <nav class="main-header__nav site-navigation">
-          <ul class="site-navigation__list">
-            <li class="site-navigation__item">
-              <a class="site-navigation__link site-navigation__link--current">Главная</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current">Главная</a>
             </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="catalog.html">Каталог продукции</a>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="form.html">Подбор программы</a>
+            <li class="nav__item">
+              <a class="nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
-        <button class="main-header__button-toggle button-toggle button-toggle--is-closed" type="button">
+        <button class="header__button button-toggle button-toggle--closed" type="button">
           <span class="visually-hidden">Кнопка управления меню</span>
         </button>
       </div>
     </header>
-    <main class="main-content">
+    <main class="main">
       <h1 class="visually-hidden">Интернет-магазин кошачьего питания Cat Energy</h1>
-      <section class="main-content__hero-banner hero-banner">
-        <div class="hero-banner__wrapper">
-          <h2 class="hero-banner__title">Функциональное питание для котов</h2>
-          <p class="hero-banner__description">Занялся собой? Займись котом!</p>
-          <img class="hero-banner__image" src="#" width="280" height="270" alt="Cat Energy pro с курицей.">
-          <a class="hero-banner__link button" href="form.html">Подобрать программу</a>
+      <section class="main__hero hero">
+        <div class="hero__wrapper">
+          <h2 class="hero__title">Функциональное питание для котов</h2>
+          <p class="hero__description">Занялся собой? Займись котом!</p>
+          <img class="hero__image" src="#" width="280" height="270" alt="Cat Energy pro с курицей.">
+          <a class="hero__link button" href="form.html">Подобрать программу</a>
         </div>
       </section>
-      <section class="main-content__programms programms">
+      <section class="main__programms programms">
         <div class="programms__wrapper">
           <h2 class="visually-hidden">Выбор программы питания</h2>
           <ul class="programms__list">
@@ -56,7 +58,7 @@
           </ul>
         </div>
       </section>
-      <section class="main-content__explanation explanation">
+      <section class="main__explanation explanation">
         <div class="explanation__wrapper">
           <h2 class="explanation__title">Как это работает</h2>
           <ol class="explanation__list">
@@ -67,7 +69,7 @@
           </ol>
         </div>
       </section>
-      <section class="main-content__case case">
+      <section class="main__case case">
         <div class="case__wrapper">
           <h2 class="case__title">Живой пример</h2>
           <p class="case__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -92,7 +94,7 @@
           </div>
         </div>
       </section>
-      <section class="main-content__invite invite">
+      <section class="main__invite invite">
         <div class="invite__wrapper">
           <h2 class="invite__title">Приглашаем к сотрудничеству дилеров!</h2>
           <address class="invite__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
@@ -100,12 +102,12 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <a class="main-footer__logo">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__logo">
           <img class="main-footer__logo-text logo-text" src="#" width="101" height="18" alt="Cat Energy.">
         </a>
-        <ul class="main-footer__socials-list socials">
+        <ul class="footer__socials-list socials">
           <li class="socials__item">
             <a class="socials__link socials__link--vkontakte" href="#">
               <span class="visually-hidden">Вконтакте</span>
@@ -122,9 +124,9 @@
             </a>
           </li>
         </ul>
-        <div class="main-footer__develop">
-          <a class="main-footer__develop-logo" href="#">
-            <span class="main-footer__develop-name">HTML Academy</span>
+        <div class="footer__develop">
+          <a class="footer__develop-logo" href="#">
+            <span class="footer__develop-name">HTML Academy</span>
             <span class="visually-hidden">Разработано HTML Academy</span>
           </a>
         </div>
