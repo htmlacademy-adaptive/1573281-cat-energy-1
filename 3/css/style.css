@@ -37,14 +37,14 @@
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../../fonts/lato/Lato-Regular.woff") format("woff");
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../../fonts/lato/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../fonts/lato/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 /* Общие блоки */
@@ -130,7 +130,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: #ffffff;
   text-align: center;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/hero-image-background.jpg");
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-image-background.jpg");
   background-repeat: no-repeat;
   background-size: auto 302px;
   background-position: top center;
@@ -536,7 +536,7 @@
 }
 
 .present__wrapper {
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/present-background.jpg");
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/present-background.jpg");
   background-repeat: no-repeat;
 }
 
