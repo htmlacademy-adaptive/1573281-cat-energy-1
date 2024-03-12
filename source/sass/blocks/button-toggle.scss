@@ -1,0 +1,21 @@
+.button-toggle {
+  width: 24px;
+  height: 2px;
+  padding: 0;
+  background-color: #000000;
+  border: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    transform: translateY(8px);
+  }
+
+  &::after {
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,22 @@
+.invite__header {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 26px 20px;
+}
+
+.invite__title {
+  margin: 0;
+  font-family: $heading-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.invite__address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}

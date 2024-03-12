@@ -1,0 +1,18 @@
+.button {
+  display: block;
+  padding: 10px 0;
+  font-family: $heading-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: $bg-color;
+
+  &--more {
+    background-color: #f2f2f2;
+    color: $main-color;
+    padding: 10px 0;
+  }
+}
