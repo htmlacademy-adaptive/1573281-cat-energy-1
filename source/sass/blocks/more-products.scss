@@ -1,0 +1,23 @@
+.more-products {
+  padding: 25px 20px;
+  text-align: center;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.more-products__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-family: $heading-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.more-products__description {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 16px;
+}
