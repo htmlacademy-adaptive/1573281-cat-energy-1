@@ -3,9 +3,13 @@
   font-family: $secondary-font;
   color: $secondary-color;
   font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 84px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
