@@ -1,8 +1,11 @@
 .case {
-  display: grid;
   padding-top: 25px;
   padding-bottom: 40px;
   background-color: #eaeaea;
+}
+
+.case__wrapper {
+  display: grid;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 367px 341px;
@@ -75,7 +78,6 @@
     grid-column: 1;
     grid-row: 3;
     column-gap: 41px;
-    margin-bottom: 99px;
   }
 
   @media (min-width: $desktop-width) {
