@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
   padding-top: 27px;
   font-family: $secondary-font;
   color: #ffffff;
@@ -31,7 +30,7 @@
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
     url("../img/hero-image-background.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
@@ -83,7 +82,7 @@
   }
 }
 
-.images-container {
+.hero__images-container {
   position: relative;
 }
 
