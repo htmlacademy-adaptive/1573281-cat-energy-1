@@ -18,4 +18,8 @@
   &::after {
     transform: translateY(-10px);
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

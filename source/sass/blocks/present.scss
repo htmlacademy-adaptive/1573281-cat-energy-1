@@ -1,25 +1,20 @@
 .present {
-  margin-bottom: 35px;
-  padding: 0 20px;
   text-align: center;
-}
-
-.present__wrapper {
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/present-background.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .present__description {
   margin: 0;
-  padding: 58px 61px 43px 58px;
+  padding: 58px 61px 25px 58px;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../img/present-background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
 
   &::before {
     display: block;
@@ -28,5 +23,24 @@
     width: 78px;
     height: 81px;
     background-image: url("../img/present-icon.svg");
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    position: relative;
+    flex-direction: row;
+    padding: 71px 110px 69px 421px;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      url("../img/present-background-tablet.jpg");
+
+    &::before {
+      position: absolute;
+      left: 78px;
+      display: block;
+      content: "";
+      margin: 0;
+      width: 78px;
+      height: 81px;
+      background-image: url("../img/present-icon.svg");
+    }
   }
 }

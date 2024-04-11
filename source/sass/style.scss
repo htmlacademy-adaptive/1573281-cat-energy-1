@@ -1,18 +1,20 @@
 /* Переменные */
-@import "./blocks/common/variables.scss";
+@import "./common/variables.scss";
 
 /* Базовые настройки */
-@import "./blocks/common/global.scss";
-@import "./blocks/common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/fonts.scss";
+@import "./common/container.scss";
 
 /* Общие блоки */
 @import "./blocks/header.scss";
-@import "./blocks/main.scss";
+@import "./blocks/nav.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/button.scss";
 @import "./blocks/button-toggle.scss";
 
 /* Блоки главной страницы */
+@import "./blocks/main.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/programms.scss";
 @import "./blocks/explanation.scss";
@@ -21,11 +23,10 @@
 
 /* Блоки страницы формы */
 @import "./blocks/form.scss";
-@import "./blocks/fieldset.scss";
 
 /* Блоки страницы каталог */
+@import "./blocks/catalog.scss";
 @import "./blocks/products.scss";
-@import "./blocks/article.scss";
 @import "./blocks/more-products.scss";
 @import "./blocks/optional.scss";
 @import "./blocks/present.scss";

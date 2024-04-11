@@ -1,10 +1,35 @@
-.main__title {
-  margin: 0;
-  padding-left: 20px;
-  font-family: $heading-font;
-  color: $heading-color;
+.main__hero {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
 }
 
-.main__more-products {
-  margin-bottom: 25px;
+.main__programms {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
+}
+
+.main__explanation {
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
