@@ -357,11 +357,52 @@
 }
 
 /* Блоки главной страницы */
+.main__hero {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .main__hero {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .main__hero {
+    margin-bottom: 82px;
+  }
+}
+
+.main__programms {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .main__programms {
+    margin-bottom: 45px;
+  }
+}
+@media (min-width: 1440px) {
+  .main__programms {
+    margin-bottom: 71px;
+  }
+}
+
+.main__explanation {
+  margin-bottom: 49px;
+}
+@media (min-width: 768px) {
+  .main__explanation {
+    margin-bottom: 47px;
+  }
+}
+@media (min-width: 1440px) {
+  .main__explanation {
+    margin-bottom: 69px;
+  }
+}
+
 .hero {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
   padding-top: 27px;
   font-family: "Oswald", "Arial", sans-serif;
   color: #ffffff;
@@ -391,7 +432,7 @@
   right: 0;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero-image-background.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   z-index: -1;
 }
 @media (min-width: 768px) {
@@ -447,7 +488,7 @@
   }
 }
 
-.images-container {
+.hero__images-container {
   position: relative;
 }
 
@@ -493,10 +534,6 @@
   .hero__link {
     position: static;
   }
-}
-
-.programms {
-  margin-bottom: 20px;
 }
 
 .programms__list {
@@ -690,10 +727,6 @@
   }
 }
 
-.explanation {
-  padding-bottom: 50px;
-}
-
 .explanation__title {
   margin: 0;
   margin-bottom: 40px;
@@ -805,14 +838,15 @@
 @media (min-width: 768px) {
   .case {
     grid-template-columns: 367px 341px;
-    padding-top: 0;
+    padding-top: 45px;
     padding-bottom: 101px;
+    border-top: 1px solid #e6e6e6;
   }
 }
 @media (min-width: 1440px) {
   .case {
     grid-template-columns: 1fr 1fr;
-    padding-top: 40px;
+    padding-top: 0;
   }
 }
 
