@@ -9,17 +9,17 @@
   <body class="page__body">
     <header class="header">
       <div class="header__wrapper container">
-        <a class="header__logo-link">
+        <a class="header__logo logo" href="index.html">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo.svg">
-            <img class="header__logo-img" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+            <img class="logo-img" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
           </picture>
-          <img class="header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
+          <img class="logo-text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
         </a>
         <nav class="nav">
-          <ul class="nav__list nav__list--inner-page">
+          <ul class="nav__list nav__list--hidden">
             <li class="nav__item">
-              <a class="nav__link" href="index.html" >Главная</a>
+              <a class="nav__link" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
               <a class="nav__link nav__link--current">Каталог продукции</a>
@@ -34,8 +34,7 @@
           <span class="visually-hidden">Кнопка управления меню</span>
         </button>
       </div>
-
-  </header>
+    </header>
     <main class="catalog">
       <h1 class="catalog__title container">Каталог продукции</h1>
       <section class="catalog__products products">
@@ -312,5 +311,6 @@
       </div>
 
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
