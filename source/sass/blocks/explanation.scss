@@ -17,14 +17,13 @@
   font-size: 14px;
   line-height: 18px;
   color: $main-color;
-  list-style-type: none;
+  counter-reset: item;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 37px 153px;
+    grid-gap: 107px 153px;
     font-size: 16px;
     line-height: 24px;
-    color: $secondary-color;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,6 +33,28 @@
 }
 
 .explanation__item {
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.explanation__item::before {
+  @media (min-width: $tablet-width) {
+    counter-increment: item;
+    content: counter(item);
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+  }
+}
+
+.explanation__icon {
   position: relative;
   display: flex;
   align-items: center;
@@ -43,7 +64,7 @@
   }
 }
 
-.explanation__item::before {
+.explanation__icon::before {
   content: "";
   display: block;
   min-width: 60px;
@@ -59,7 +80,7 @@
   }
 }
 
-.explanation__item::after {
+.explanation__icon::after {
   content: "";
   display: block;
   position: absolute;
@@ -72,25 +93,25 @@
   }
 }
 
-.explanation__item--leaf::after {
+.explanation__icon--leaf::after {
   width: 30px;
   height: 32px;
   background-image: url("../img/explanataion-leaf.svg");
 }
 
-.explanation__item--powder::after {
+.explanation__icon--powder::after {
   width: 27px;
   height: 29px;
   background-image: url("../img/explanataion-powder.svg");
 }
 
-.explanation__item--cutlery::after {
+.explanation__icon--cutlery::after {
   width: 25px;
   height: 30px;
   background-image: url("../img/explanataion-cutlery.svg");
 }
 
-.explanation__item--clock::after {
+.explanation__icon--clock::after {
   width: 27px;
   height: 31px;
   background-image: url("../img/explanataion-clock.svg");
