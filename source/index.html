@@ -88,11 +88,11 @@
           <dl class="case__list">
             <div class="case__list-wrapper">
               <dt class="case__term">5 кг</dt>
-              <dd class="case__definition">снижение<br>веса</dd>
+              <dd class="case__definition">снижение <br>веса</dd>
             </div>
             <div class="case__list-wrapper">
               <dt class="case__term">60 дней</dt>
-              <dd class="case__definition">затрачено<br>времени</dd>
+              <dd class="case__definition">затрачено <br>времени</dd>
             </div>
           </dl>
           <div class="case__price">
@@ -100,19 +100,20 @@
             <p class="case__price-value">15 000 РУБ.</p>
           </div>
           <div class="case__slider slider">
-            <img class="slider__weight-cat" src="#" width="280" height="256" alt="Кот с излишним весом.">
-            <img class="slider__slim-cat" src="#" width="280" height="256" alt="Кот с нормальным весом.">
-            <div class="slider__slider-control">
-              <button class="slider__button slider__button--slim" type="button">
-                <span class="visually-hidden">Сделать худее</span>
-              </button>
-              <button class="slider__button slider__button--weight" type="button">
-                <span class="visually-hidden">Сделать толще</span>
-              </button>
+            <div class="slider__images">
+              <picture class="slider__weight-cat" >
+                <source media="(min-width: 768px)" srcset="img/case-cat-weight.png" width="560" height="512">
+                <img src="img/case-cat-weight-mobile.png" width="280" height="256" alt="Кот с излишним весом.">
+              </picture>
+              <picture class="slider__slim-cat" >
+                <source media="(min-width: 768px)" srcset="img/case-cat-slim.png" width="560" height="512">
+                <img src="img/case-cat-slim-mobile.png" width="280" height="256" alt="Кот с нормальным весом.">
+              </picture>
             </div>
-          </div>
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Изменить размеры кота</span>
+            </button>
         </div>
-
       </section>
       <section class="main__invite invite">
           <div class="invite__header-wrapper container">

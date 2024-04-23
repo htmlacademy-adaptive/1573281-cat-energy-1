@@ -1,7 +1,15 @@
 .case {
-  padding-top: 25px;
-  padding-bottom: 40px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid #e6e6e6;
+    background-image: linear-gradient(to top, #eaeaea 530px, #ffffff 530px);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to top, #eaeaea 500px, #ffffff 500px);
+    border-top: 0;
+  }
 }
 
 .case__wrapper {
@@ -11,12 +19,12 @@
     grid-template-columns: 367px 341px;
     padding-top: 45px;
     padding-bottom: 101px;
-    border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
     padding-top: 0;
+    padding-bottom: 75px;
   }
 }
 
@@ -68,13 +76,14 @@
 
 .case__list {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 32px;
-  justify-content: center;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 99px;
     grid-column: 1;
     grid-row: 3;
     column-gap: 41px;
@@ -89,17 +98,24 @@
 }
 
 .case__list-wrapper {
+  width: 124px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .case__term {
-  margin-bottom: 7px;
+  padding: 14px 0;
   text-align: center;
   font-family: $secondary-font;
   color: $secondary-color;
   font-size: 24px;
   line-height: 24px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 11px;
@@ -110,14 +126,27 @@
 
 .case__definition {
   margin: 0;
+  padding: 0 8px;
+  transform: translateY(-10px);
   align-self: center;
   text-align: center;
   font-size: 12px;
   line-height: 12px;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
+    transform: translateY(-22px);
     font-size: 14px;
     line-height: 14px;
+    background-color: #ffffff;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
   }
 }
 
@@ -163,7 +192,7 @@
 }
 
 .case__slider {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
   }
 
