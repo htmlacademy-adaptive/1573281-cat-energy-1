@@ -59,6 +59,15 @@
   background-color: #666666;
 }
 
+.socials__link:hover::after {
+  background-color: $bg-color;
+}
+
+.socials__link:active::after {
+  background-color: $bg-color;
+  opacity: 0.3;
+}
+
 .socials__link--vkontakte::after {
   mask: url("../img/vkontakte-icon.svg") no-repeat center;
 }
