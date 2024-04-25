@@ -109,16 +109,15 @@
 
 .header__wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   padding-top: 14px;
   padding-bottom: 14px;
 }
 @media (min-width: 768px) {
   .header__wrapper {
-    flex-direction: row;
     padding-top: 25px;
-    align-items: center;
   }
 }
 @media (min-width: 1440px) {
@@ -167,7 +166,7 @@
 .nav__list {
   margin: 0;
   padding: 0;
-  position: static;
+  position: absolute;
   left: 0;
   top: 69px;
   width: 100%;
