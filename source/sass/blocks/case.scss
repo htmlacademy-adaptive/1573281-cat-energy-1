@@ -139,10 +139,6 @@
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
-
-    & br {
-      display: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -164,7 +160,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 2;
     grid-row: 3;
-    align-self: start;
+    align-self: flex-start;
     flex-direction: column;
     font-size: 20px;
     line-height: 20px;
@@ -174,7 +170,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     column-gap: 63px;
     grid-column: 1;
     grid-row: 4;
