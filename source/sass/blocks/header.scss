@@ -13,21 +13,6 @@
   margin-bottom: 0;
 }
 
-.header--index a {
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
-  }
-}
-
-.header--index .nav__link--current::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  margin-top: 8px;
-  border: 2px solid #ffffff;
-}
-
 .header__wrapper {
   display: flex;
   align-items: center;
