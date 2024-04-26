@@ -126,6 +126,11 @@
   }
 }
 
+.header__wrapper--nojs {
+  flex-direction: column;
+  align-items: normal;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -161,6 +166,14 @@
     width: 118px;
     height: 21px;
   }
+}
+
+.logo--nojs {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .nav__list {
@@ -203,6 +216,10 @@
   .nav__list--hidden {
     display: flex;
   }
+}
+
+.nav__list--nojs {
+  position: static;
 }
 
 .nav__list--inner-page a {
