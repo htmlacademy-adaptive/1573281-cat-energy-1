@@ -29,3 +29,8 @@
     padding-top: 50px;
   }
 }
+
+.header__wrapper--nojs {
+  flex-direction: column;
+  align-items: normal;
+}

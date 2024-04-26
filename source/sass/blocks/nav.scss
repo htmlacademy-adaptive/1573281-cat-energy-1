@@ -37,6 +37,10 @@
   }
 }
 
+.nav__list--nojs {
+  position: static;
+}
+
 
 .nav__list--inner-page a {
   color: $secondary-color;
