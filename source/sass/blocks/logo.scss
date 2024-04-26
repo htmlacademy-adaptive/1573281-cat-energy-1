@@ -1,0 +1,44 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &:hover[href] {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &:active[href] {
+    opacity: 0.6;
+  }
+}
+
+.logo-img {
+  margin-right: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+    width: 60px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 14px;
+    width: 70px;
+    height: 59px;
+  }
+}
+
+.logo-text {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.logo--nojs {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

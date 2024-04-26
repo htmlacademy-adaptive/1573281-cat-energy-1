@@ -1,9 +1,16 @@
 .button-toggle {
+  padding: 0;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.button-toggle--closed {
   width: 24px;
   height: 2px;
-  padding: 0;
   background-color: #000000;
-  border: 0;
 
   &::before,
   &::after {
@@ -18,8 +25,20 @@
   &::after {
     transform: translateY(-10px);
   }
+}
 
-  @media (min-width: $tablet-width) {
-    display: none;
+.button-toggle--opened {
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: translateY(-2px) rotate(-45deg);
   }
 }

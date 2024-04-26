@@ -8,28 +8,28 @@
   </head>
   <body class="page__body">
     <header class="header header--index">
-      <div class="header__wrapper container">
-        <a class="header__logo-link">
+      <div class="header__wrapper header__wrapper--nojs">
+        <a class="header__logo logo logo--nojs">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo.svg">
-            <img class="header__logo-img" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+            <img class="logo-img" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
           </picture>
-          <img class="header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
+          <img class="logo-text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
         </a>
         <nav class="nav">
-          <ul class="nav__list">
+          <ul class="nav__list nav__list--nojs">
             <li class="nav__item">
-              <a class="nav__link nav__link--current">Главная</a>
+              <a class="nav__link nav__link--current nav__link--index nav__link--index-current">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="catalog.html">Каталог продукции</a>
+              <a class="nav__link nav__link--index" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="form.html">Подбор программы</a>
+              <a class="nav__link nav__link--index" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
-        <button class="header__button button-toggle button-toggle--closed" type="button">
+        <button class="header__button button-toggle" type="button">
           <span class="button-toggle__decoration"></span>
           <span class="visually-hidden">Кнопка управления меню</span>
         </button>
@@ -39,7 +39,7 @@
       <h1 class="visually-hidden">Интернет-магазин кошачьего питания Cat Energy</h1>
       <section class="main__hero hero">
         <div class="hero__wrapper container">
-          <h2 class="hero__title">Функциональное <br> питание для котов</h2>
+          <h2 class="hero__title">Функциональное питание для котов</h2>
           <p class="hero__description">Занялся собой? Займись котом!</p>
           <picture class="hero__images-container">
             <source media="(min-width: 1440px)" srcset="img/hero-image-desktop.png">
@@ -67,10 +67,18 @@
       <section class="main__explanation explanation container">
         <h2 class="explanation__title">Как это работает</h2>
         <ol class="explanation__list">
-          <li class="explanation__item explanation__item--leaf">Функциональное питание содержит только полезные питательные вещества.</li>
-          <li class="explanation__item explanation__item--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-          <li class="explanation__item explanation__item--cutlery">Замените один-два приема обычной еды на наше функциональное питание.</li>
-          <li class="explanation__item explanation__item--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          <li class="explanation__item">
+            <span class="explanation__icon explanation__icon--leaf">Функциональное питание содержит только полезные питательные вещества.</span>
+          </li>
+          <li class="explanation__item">
+            <span class="explanation__icon explanation__icon--powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</span>
+          </li>
+          <li class="explanation__item">
+            <span class="explanation__icon explanation__icon--cutlery">Замените один-два приема обычной еды на наше функциональное питание.</span>
+          </li>
+          <li class="explanation__item">
+            <span class="explanation__icon explanation__icon--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</span>
+          </li>
         </ol>
       </section>
       <section class="main__case case">
@@ -80,11 +88,11 @@
           <dl class="case__list">
             <div class="case__list-wrapper">
               <dt class="case__term">5 кг</dt>
-              <dd class="case__definition">снижение<br>веса</dd>
+              <dd class="case__definition">снижение <br>веса</dd>
             </div>
             <div class="case__list-wrapper">
               <dt class="case__term">60 дней</dt>
-              <dd class="case__definition">затрачено<br>времени</dd>
+              <dd class="case__definition">затрачено <br>времени</dd>
             </div>
           </dl>
           <div class="case__price">
@@ -92,19 +100,20 @@
             <p class="case__price-value">15 000 РУБ.</p>
           </div>
           <div class="case__slider slider">
-            <img class="slider__weight-cat" src="#" width="280" height="256" alt="Кот с излишним весом.">
-            <img class="slider__slim-cat" src="#" width="280" height="256" alt="Кот с нормальным весом.">
-            <div class="slider__slider-control">
-              <button class="slider__button slider__button--slim" type="button">
-                <span class="visually-hidden">Сделать худее</span>
-              </button>
-              <button class="slider__button slider__button--weight" type="button">
-                <span class="visually-hidden">Сделать толще</span>
-              </button>
+            <div class="slider__images">
+              <picture class="slider__weight-cat" >
+                <source media="(min-width: 768px)" srcset="img/case-cat-weight.png" width="560" height="512">
+                <img src="img/case-cat-weight-mobile.png" width="280" height="256" alt="Кот с излишним весом.">
+              </picture>
+              <picture class="slider__slim-cat" >
+                <source media="(min-width: 768px)" srcset="img/case-cat-slim.png" width="560" height="512">
+                <img src="img/case-cat-slim-mobile.png" width="280" height="256" alt="Кот с нормальным весом.">
+              </picture>
             </div>
-          </div>
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Изменить размеры кота</span>
+            </button>
         </div>
-
       </section>
       <section class="main__invite invite">
           <div class="invite__header-wrapper container">
@@ -148,5 +157,6 @@
       </div>
 
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -8,13 +8,16 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__wrapper form-container">
-        <a class="header__logo-link" href="index.html">
-          <img class="header__logo-img" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-          <img class="header__logo-text logo-text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
+      <div class="header__wrapper header__wrapper--nojs">
+        <a class="header__logo logo logo--nojs" href="index.html">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/logo.svg">
+            <img class="logo-img" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+          <img class="logo-text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
         </a>
         <nav class="nav">
-          <ul class="nav__list nav__list--inner-page">
+          <ul class="nav__list nav__list--nojs">
             <li class="nav__item">
               <a class="nav__link" href="index.html">Главная</a>
             </li>
@@ -26,7 +29,8 @@
             </li>
           </ul>
         </nav>
-        <button class="header__button-toggle button-toggle button-toggle--is-closed" type="button">
+        <button class="header__button button-toggle" type="button">
+          <span class="button-toggle__decoration"></span>
           <span class="visually-hidden">Кнопка управления меню</span>
         </button>
       </div>
@@ -70,22 +74,22 @@
         </div>
         <fieldset class="form__owner-contacts">
           <legend class="form__legend">
-            <h2 class="form__legend-title form-container">
+            <h2 class="form__legend-title container">
               <span class="form__legend-text">Контактные данные<br> (владельца кота)</span>
             </h2>
           </legend>
           <div class="form__owner-wrapper form-container">
             <label class="form__owner-contacts-label">E-mail:*
-              <input class="form__owner-contacts-input" type="email" name="owner-mail" placeholder="kuklachev@gmail.com" required>
+              <input class="form__owner-contacts-input form__owner-contacts-input--mail" type="email" name="owner-mail" placeholder="kuklachev@gmail.com" required>
             </label>
             <label class="form__owner-contacts-label">Телефон:*
-              <input class="form__owner-contacts-input" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
+              <input class="form__owner-contacts-input form__owner-contacts-input--phone" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
             </label>
           </div>
         </fieldset>
         <fieldset class="form__comments">
           <legend class="form__legend">
-            <h2 class="form__legend-title form-container">
+            <h2 class="form__legend-title container">
               <span class="form__legend-text">Комментарий</span>
             </h2>
           </legend>
@@ -95,7 +99,7 @@
         </fieldset>
         <fieldset class="form__additionally">
           <legend class="form__legend">
-            <h2 class="form__legend-title form-container">
+            <h2 class="form__legend-title container">
               <span class="form__legend-text">Дополнительно</span>
             </h2>
           </legend>
@@ -123,7 +127,7 @@
           <p class="form__note">* — Обязательные поля</p>
         </div>
       </form>
-      <section class="invite">
+      <section class="invite invite--dark-bg">
         <div class="invite__header-wrapper container">
             <div class="invite__header">
               <h2 class="invite__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
@@ -133,11 +137,11 @@
         <div class="invite__map">
           <iframe class="invite__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6088082175913!2d30.325107334481856!3d59.93863317234001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1711636236832!5m2!1sru!2skz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </section>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper container">
-        <a class="footer__logo">
+        <a class="footer__logo" href="index.html">
           <img class="footer__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
         </a>
         <ul class="footer__socials-list">
@@ -164,5 +168,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

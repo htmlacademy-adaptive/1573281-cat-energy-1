@@ -36,36 +36,19 @@
   grid-template-areas: "image title" "image description" "button button";
 
   @media (min-width: $tablet-width) {
-    width: 324px;
+    max-width: 324px;
     position: relative;
     padding-top: 0;
     padding-left: 37px;
     padding-right: 37px;
+    padding-bottom: 40px;
     grid-template-columns: 1fr;
     grid-template-areas: "image" "title" "description" "button";
+    background: linear-gradient(to bottom, #ffffff 18%, #f2f2f2 18%);
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-  }
-}
-
-.products__item-wrapper::before {
-  @media (min-width: $tablet-width) {
-    display: block;
-    position: absolute;
-    top: 30px;
-    left: 0;
-    content: "";
-    width: 324px;
-    height: 335px;
-    background: #f2f2f2;
-    z-index: -1;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 245px;
-    height: 355px;
   }
 }
 
@@ -75,6 +58,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 136px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,9 +72,14 @@
 .products__link-title-container {
   grid-area: title;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 }
 
 .products__title {
+  max-width: 80px;
   margin: 0;
   font-family: $secondary-font;
   font-weight: 400;
@@ -97,6 +89,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    max-width: 135px;
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 24px;

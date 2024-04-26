@@ -9,9 +9,33 @@
   color: #ffffff;
   background-color: $bg-color;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--more {
     background-color: #f2f2f2;
     color: $main-color;
     padding: 10px 0;
+    min-width: 280px;
+
+    &:hover,
+    &:active {
+      background-color: #ebebeb;
+      color: #444444;
+    }
+
+    @media (min-width: $tablet-width) {
+      min-width: 250px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 169px;
+    }
   }
 }

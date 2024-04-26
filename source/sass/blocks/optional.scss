@@ -68,12 +68,14 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
-    row-gap: 54px;
+    padding-left: 68px;
+    padding-right: 68px;
+    row-gap: 26px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    row-gap: 32px;
+    row-gap: 15px;
     width: auto;
     padding: 0;
   }
@@ -81,17 +83,30 @@
 
 .optional__item {
   display: grid;
+  margin-bottom: 20px;
   padding-top: 13px;
   row-gap: 19px;
+  border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     grid-template-columns: 1fr 1fr;
-    padding: 0;
+    padding-top: 26px;
     row-gap: 25px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 244px;
+    padding-top: 15px;
+  }
+}
+
+.optional__item:last-child {
+  padding-bottom: 19px;
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 28px;
   }
 }
 

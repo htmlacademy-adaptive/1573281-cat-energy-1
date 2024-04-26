@@ -8,18 +8,18 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__wrapper container">
-        <a class="header__logo-link">
+      <div class="header__wrapper header__wrapper--nojs">
+        <a class="header__logo logo logo--nojs" href="index.html">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo.svg">
-            <img class="header__logo-img" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+            <img class="logo-img" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
           </picture>
-          <img class="header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
+          <img class="logo-text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
         </a>
         <nav class="nav">
-          <ul class="nav__list nav__list--inner-page">
+          <ul class="nav__list nav__list--nojs">
             <li class="nav__item">
-              <a class="nav__link" href="index.html" >Главная</a>
+              <a class="nav__link" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
               <a class="nav__link nav__link--current">Каталог продукции</a>
@@ -29,18 +29,17 @@
             </li>
           </ul>
         </nav>
-        <button class="header__button button-toggle button-toggle--closed" type="button">
+        <button class="header__button button-toggle" type="button">
           <span class="button-toggle__decoration"></span>
           <span class="visually-hidden">Кнопка управления меню</span>
         </button>
       </div>
-
-  </header>
+    </header>
     <main class="catalog">
       <h1 class="catalog__title container">Каталог продукции</h1>
       <section class="catalog__products products">
         <h2 class="visually-hidden">Каталог кормов для кошек</h2>
-        <ul class="products__list">
+        <ul class="products__list container">
           <li class="products__item">
             <div class="products__item-wrapper container">
               <a class="products__link-image-container" href="#">
@@ -216,10 +215,12 @@
               <a class="products__order-link button" href="#">Заказать</a>
             </div>
           </li>
-          <li class="products__item more-products container">
+          <li class="products__item more-products">
+            <div class="more-products-wrapper container">
             <h2 class="more-products__title">Показать еще 100500 товаров</h2>
             <p class="more-products__description">На самом деле вкусов гораздо больше!</p>
             <a class="more-products__button button button--more" href="#" >Показать все</a>
+            </div>
           </li>
         </ul>
       </section>
@@ -266,11 +267,11 @@
           </ul>
           <div class="optional__list-present present container">
             <h2 class="visually-hidden">Получить подарок</h2>
-            <p class="present__description">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="present__description">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
-      <section class="catalog__invite invite">
+      <section class="catalog__invite invite invite--dark-bg">
         <div class="invite__header-wrapper container">
             <div class="invite__header">
               <h2 class="invite__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
@@ -280,11 +281,11 @@
         <div class="invite__map">
           <iframe class="invite__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6088082175913!2d30.325107334481856!3d59.93863317234001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1711636236832!5m2!1sru!2skz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </section>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper container">
-        <a class="footer__logo">
+        <a class="footer__logo" href="index.html">
           <img class="footer__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
         </a>
         <ul class="footer__socials-list">
@@ -312,5 +313,6 @@
       </div>
 
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

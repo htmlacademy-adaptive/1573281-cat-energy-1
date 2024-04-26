@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   margin-bottom: 27px;
   border-bottom: 1px solid #d9d9d9;
 
@@ -14,6 +15,7 @@
 
 .header__wrapper {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding-top: 14px;
@@ -28,30 +30,7 @@
   }
 }
 
-.header__logo-link {
-  display: flex;
-  align-items: center;
-}
-
-.header__logo-img {
-  margin-right: 56px;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 13px;
-    width: 60px;
-    height: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 14px;
-    width: 70px;
-    height: 59px;
-  }
-}
-
-.header__logo-text {
-  @media (min-width: $desktop-width) {
-    width: 118px;
-    height: 21px;
-  }
+.header__wrapper--nojs {
+  flex-direction: column;
+  align-items: normal;
 }
