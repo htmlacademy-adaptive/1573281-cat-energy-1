@@ -13,6 +13,12 @@
   margin-bottom: 0;
 }
 
+.header--catalog {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
 .header__wrapper {
   display: flex;
   flex-direction: row;
