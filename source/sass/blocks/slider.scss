@@ -39,6 +39,15 @@
   }
 }
 
+.slider__image {
+  width: 280px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+}
+
 .slider__button {
   width: 4px;
   height: 256px;

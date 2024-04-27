@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
     <title>Интернет-магазин кошачьего питания | Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -42,9 +46,9 @@
           <h2 class="hero__title">Функциональное питание для котов</h2>
           <p class="hero__description">Занялся собой? Займись котом!</p>
           <picture class="hero__images-container">
-            <source media="(min-width: 1440px)" srcset="img/hero-image-desktop.png">
-            <source media="(min-width: 768px)" srcset="img/hero-image-tablet.png">
-            <img class="hero__image" src="img/hero-image.png" width="280" height="270" alt="Cat Energy pro с курицей.">
+            <source media="(min-width: 1440px)" srcset="img/hero-image-desktop.png 1x, img/hero-image-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/hero-image-tablet.png, img/hero-image-tablet@2x.png 2x">
+            <img class="hero__image" src="img/hero-image-mobile.png" srcset="img/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy pro с курицей.">
           </picture>
           <a class="hero__link button" href="form.html">Подобрать программу</a>
         </div>
@@ -101,14 +105,18 @@
           </div>
           <div class="case__slider slider">
             <div class="slider__images">
-              <picture class="slider__weight-cat" >
-                <source media="(min-width: 768px)" srcset="img/case-cat-weight.png" width="560" height="512">
-                <img src="img/case-cat-weight-mobile.png" width="280" height="256" alt="Кот с излишним весом.">
-              </picture>
-              <picture class="slider__slim-cat" >
-                <source media="(min-width: 768px)" srcset="img/case-cat-slim.png" width="560" height="512">
-                <img src="img/case-cat-slim-mobile.png" width="280" height="256" alt="Кот с нормальным весом.">
-              </picture>
+              <div class="slider__weight-cat">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/case-cat-weight-tablet.png 1x, img/case-cat-weight-tablet@2x.png 2x">
+                  <img class="slider__image" src="img/case-cat-weight-mobile.png" srcset="img/case-cat-weight-mobile@2x.png 2x" width="280" height="256" alt="Кот с излишним весом.">
+                </picture>
+              </div>
+              <div class="slider__slim-cat">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/case-cat-slim-tablet.png 1x, img/case-cat-slim-tablet@2x.png 2x">
+                  <img class="slider__image" src="img/case-cat-slim-mobile.png" srcset="img/case-cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Кот с нормальным весом.">
+                </picture>
+              </div>
             </div>
             <button class="slider__button" type="button">
               <span class="visually-hidden">Изменить размеры кота</span>

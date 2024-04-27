@@ -10,7 +10,6 @@
     gap: 60px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,7 +43,7 @@
     padding-bottom: 40px;
     grid-template-columns: 1fr;
     grid-template-areas: "image" "title" "description" "button";
-    background: linear-gradient(to bottom, #ffffff 18%, #f2f2f2 18%);
+    background: linear-gradient(to bottom, #ffffff 15%, #f2f2f2 15%);
   }
 
   @media (min-width: $desktop-width) {
@@ -53,21 +52,33 @@
 }
 
 .products__link-image-container {
+  display: block;
   grid-area: image;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    height: 206px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    height: 136px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 30px;
   }
 }
+
+.products__image {
+  display: block;
+  width: 84px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    max-width: 206px;
+  }
+}
+
 
 .products__link-title-container {
   grid-area: title;
