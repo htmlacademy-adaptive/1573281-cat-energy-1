@@ -11,6 +11,10 @@
 .header--index {
   border: 0;
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .header--catalog {
@@ -24,7 +28,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-top: 14px;
+  padding-top: 10px;
   padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
