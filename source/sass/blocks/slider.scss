@@ -84,6 +84,12 @@
   @media (min-width: $tablet-width) {
     height: 512px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 512px;
+    left: 54%;
+    top: 48%;
+  }
 }
 
 .slider__button::before {

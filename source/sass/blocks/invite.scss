@@ -20,7 +20,7 @@
     padding: 60px 80px;
     position: absolute;
     width: 565px;
-    top: 95px;
+    top: 88px;
     left: 110px;
     background-color: #ffffff;
   }
@@ -53,6 +53,11 @@
     row-gap: 19px;
     font-size: 16px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-left: 45px;
   }
 }
 

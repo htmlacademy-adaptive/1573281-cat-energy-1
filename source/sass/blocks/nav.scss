@@ -59,6 +59,10 @@
     margin-top: 8px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
+  }
 }
 
 .nav__link--index {
