@@ -16,9 +16,9 @@
         <a class="header__logo logo logo--nojs">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo.svg">
-            <img class="logo-img" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+            <img class="logo__img" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
           </picture>
-          <img class="logo-text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
+          <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
         </a>
         <nav class="nav">
           <ul class="nav__list nav__list--nojs">
@@ -107,12 +107,16 @@
             <div class="slider__images">
               <div class="slider__weight-cat">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/case-cat-weight-tablet.webp 1x, img/case-cat-weight-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/case-cat-weight-mobile.webp 1x, img/case-cat-weight-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/case-cat-weight-tablet.png 1x, img/case-cat-weight-tablet@2x.png 2x">
                   <img class="slider__image" src="img/case-cat-weight-mobile.png" srcset="img/case-cat-weight-mobile@2x.png 2x" width="280" height="256" alt="Кот с излишним весом.">
                 </picture>
               </div>
               <div class="slider__slim-cat">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/case-cat-slim-tablet.webp 1x, img/case-cat-slim-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/case-cat-slim-mobile.webp 1x, img/case-cat-slim-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/case-cat-slim-tablet.png 1x, img/case-cat-slim-tablet@2x.png 2x">
                   <img class="slider__image" src="img/case-cat-slim-mobile.png" srcset="img/case-cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Кот с нормальным весом.">
                 </picture>

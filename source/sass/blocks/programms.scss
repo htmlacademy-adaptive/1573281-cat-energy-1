@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -15,7 +15,8 @@
 
 .programms__item {
   position: relative;
-  padding: 20px;
+  padding: 26px;
+  padding-left: 20px;
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
@@ -88,8 +89,8 @@
   width: 36px;
   height: 50px;
   position: absolute;
-  left: 27px;
-  top: 18px;
+  left: 28px;
+  top: 22px;
   background-image: url("../img/progrpamms-slim.svg");
 
   @media (min-width: $tablet-width) {
@@ -143,7 +144,7 @@
 
 .programms__item-description {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   padding-bottom: 23px;
   font-size: 14px;
   line-height: 18px;
