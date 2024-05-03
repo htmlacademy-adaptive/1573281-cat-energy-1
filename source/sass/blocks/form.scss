@@ -278,6 +278,12 @@
   }
 }
 
+.form__legend-text br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .form__owner-contacts {
   margin: 0;
   margin-bottom: 21px;
