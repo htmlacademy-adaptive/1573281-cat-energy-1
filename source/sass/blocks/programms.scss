@@ -97,7 +97,7 @@
   position: absolute;
   left: 28px;
   top: 22px;
-  background-image: url("../img/progrpamms-slim.svg");
+  background-image: url("../img/sprite.svg#programms-slim");
 
   @media (min-width: $tablet-width) {
     width: 140px;
@@ -126,7 +126,7 @@
   height: 28px;
   position: absolute;
   left: 10px;
-  background-image: url("../img/progrpamms-weight.svg");
+  background-image: url("../img/sprite.svg#programms-weight");
 
   @media (min-width: $tablet-width) {
     width: 268px;
@@ -173,11 +173,8 @@
 }
 
 .programms__item-link {
+  display: block;
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  column-gap: 15px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
@@ -186,17 +183,22 @@
   text-transform: uppercase;
 
   &::after {
-    display: block;
     content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 26px;
     width: 24px;
     height: 12px;
-    background: url("../img/programms-ico-arrow.svg") no-repeat center;
+    background-color: #000000;
+    mask-image: url("../img/sprite.svg#programms-arrow");
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
+    outline: none;
+    mask-image: url("../img/sprite.svg#programms-arrow-hover");
     width: 32px;
-    right: 0;
-    background: url("../img/programms-ico-arrow-hover.svg") no-repeat center;
   }
 
   &:active {
@@ -204,8 +206,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    column-gap: 25px;
     font-size: 20px;
     line-height: 24px;
   }
+}
+
+.programms__item-link:focus {
+  outline: none;
 }

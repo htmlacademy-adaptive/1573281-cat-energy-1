@@ -1,6 +1,6 @@
 .footer {
   background-color: #f2f2f2;
-  padding: 40px 0;
+  padding: 36px 0;
 
   @media (min-width: $tablet-width) {
     padding: 59px 0;
@@ -32,6 +32,19 @@
 .footer__logo-text {
   width: 128px;
   height: 24px;
+  color: #111111;
+}
+
+.footer__logo:hover[href] .footer__logo-text,
+.footer__logo:focus[href],
+.footer__logo:focus[href] .footer__logo-text {
+  outline: none;
+  color: #3e3e3e;
+}
+
+.footer__logo:active[href] .footer__logo-text {
+  outline: none;
+  color: #6b6b6b;
 }
 
 .footer__socials-list {
@@ -59,7 +72,10 @@
   background-color: #666666;
 }
 
-.socials__link:hover::after {
+.socials__link:hover::after,
+.socials__link:focus::after,
+.socials__link:focus {
+  outline: none;
   background-color: $bg-color;
 }
 
@@ -69,15 +85,15 @@
 }
 
 .socials__link--vkontakte::after {
-  mask: url("../img/vkontakte-icon.svg") no-repeat center;
+  mask: url("../img/sprite.svg#vkontakte-icon") no-repeat center;
 }
 
 .socials__link--youtube::after {
-  mask: url("../img/youtube-icon.svg") no-repeat center;
+  mask: url("../img/sprite.svg#youtube-icon") no-repeat center;
 }
 
 .socials__link--telegram::after {
-  mask: url("../img/telegram-icon.svg") no-repeat center;
+  mask: url("../img/sprite.svg#telegram-icon") no-repeat center;
 }
 
 .footer__develop-logo {
@@ -101,7 +117,22 @@
   width: 27px;
   height: 34px;
   background-color: #666666;
-  mask: url("../img/html-academy-logo.svg") no-repeat center;
+  mask: url("../img/sprite.svg#html-academy-logo") no-repeat center;
+}
+
+.footer__develop-logo:hover::after,
+.footer__develop-logo:focus::after {
+  outline: none;
+  background-color: $bg-color;
+}
+
+.footer__develop-logo:focus {
+  outline: 0;
+}
+
+.footer__develop-logo:active {
+  outline: none;
+  opacity: 0.3;
 }
 
 .footer__develop-name {

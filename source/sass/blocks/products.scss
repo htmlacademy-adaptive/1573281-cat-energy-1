@@ -101,6 +101,14 @@
   }
 }
 
+.products__link-image-container:hover,
+.products__link-title-container:hover,
+.products__link-image-container:focus,
+.products__link-title-container:focus {
+  outline: 0;
+  opacity: 0.6;
+}
+
 .products__title {
   max-width: 80px;
   margin: 0;

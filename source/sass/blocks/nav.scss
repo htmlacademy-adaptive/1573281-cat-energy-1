@@ -71,7 +71,9 @@
   }
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link:focus {
+  outline: none;
   opacity: 0.6;
 }
 
