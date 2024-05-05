@@ -7,6 +7,10 @@
   padding: 0;
   list-style: none;
 
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 80px;
@@ -15,15 +19,17 @@
 
 .programms__item {
   position: relative;
-  padding: 20px;
+  padding: 26px;
+  padding-left: 20px;
+  padding-bottom: 20px;
   background-color: #f2f2f2;
 
   @media (min-width: $tablet-width) {
-    padding: 81px 63px 53px 53px;
+    padding: 81px 63px 60px 53px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 41px 61px 55px 52px;
+    padding: 41px 61px 62px 52px;
   }
 }
 
@@ -40,7 +46,6 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 340px;
     margin-bottom: 24px;
     justify-content: space-between;
     align-items: start;
@@ -49,7 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 73px;
+    margin-bottom: 40px;
     align-items: center;
     justify-content: start;
   }
@@ -68,8 +73,9 @@
     order: 2;
     position: absolute;
     width: 200px;
-    height: 211px;
+    height: 200px;
     right: 0;
+    top: 96px;
     margin-right: 63px;
   }
 
@@ -77,8 +83,9 @@
     order: 0;
     position: relative;
     width: 100px;
-    height: 106px;
-    margin-right: 47px;
+    height: 100px;
+    margin-right: 62px;
+    top: 1px;
   }
 }
 
@@ -88,16 +95,16 @@
   width: 36px;
   height: 50px;
   position: absolute;
-  left: 27px;
-  top: 18px;
-  background-image: url("../img/progrpamms-slim.svg");
+  left: 28px;
+  top: 22px;
+  background-image: url("../img/sprite.svg#programms-slim");
 
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
     left: auto;
-    top: 80px;
-    right: 80px;
+    top: 85px;
+    right: 93px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -105,8 +112,8 @@
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 97px;
-    left: 72px;
-    top: 41px;
+    left: 66px;
+    top: 37px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -119,14 +126,14 @@
   height: 28px;
   position: absolute;
   left: 10px;
-  background-image: url("../img/progrpamms-weight.svg");
+  background-image: url("../img/sprite.svg#programms-weight");
 
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 112px;
     left: auto;
-    top: 140px;
-    right: 30px;
+    top: 135px;
+    right: 27px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -135,7 +142,7 @@
     width: 134px;
     height: 56px;
     left: 33px;
-    top: 67px;
+    top: 63px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -143,7 +150,7 @@
 
 .programms__item-description {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   padding-bottom: 23px;
   font-size: 14px;
   line-height: 18px;
@@ -151,7 +158,7 @@
 
   @media (min-width: $tablet-width) {
     width: 340px;
-    margin-bottom: 48px;
+    margin-bottom: 55px;
     padding: 0;
     color: $secondary-color;
     font-size: 16px;
@@ -161,16 +168,13 @@
 
   @media (min-width: $desktop-width) {
     width: 457px;
-    margin-bottom: 23px;
+    margin-bottom: 30px;
   }
 }
 
 .programms__item-link {
+  display: block;
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  column-gap: 15px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
@@ -179,17 +183,22 @@
   text-transform: uppercase;
 
   &::after {
-    display: block;
     content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 26px;
     width: 24px;
     height: 12px;
-    background: url("../img/programms-ico-arrow.svg") no-repeat center;
+    background-color: #000000;
+    mask-image: url("../img/sprite.svg#programms-arrow");
   }
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
+    outline: none;
+    mask-image: url("../img/sprite.svg#programms-arrow-hover");
     width: 32px;
-    right: 0;
-    background: url("../img/programms-ico-arrow-hover.svg") no-repeat center;
   }
 
   &:active {
@@ -197,8 +206,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    column-gap: 25px;
     font-size: 20px;
     line-height: 24px;
   }
+}
+
+.programms__item-link:focus {
+  outline: none;
 }

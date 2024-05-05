@@ -15,10 +15,11 @@
       <div class="header__wrapper header__wrapper--nojs">
         <a class="header__logo logo logo--nojs" href="index.html">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/logo.svg">
-            <img class="logo-img" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="logo__img" src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
           </picture>
-          <img class="logo-text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
+          <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
         </a>
         <nav class="nav">
           <ul class="nav__list nav__list--nojs">
@@ -62,15 +63,15 @@
               <div class="form__programm-type-inner-wrapper">
                 <label class="form__programm-type-label">
                   <input class="form__programm-type-input" type="radio" name="programm-type" value="fill" checked>
-                  Похудение
+                  <span class="form__programm-type-text">Похудение</span>
                 </label>
                 <label class="form__programm-type-label">
-                  <input class="form__programm-type-input" type="radio" name="programm-type" value="weight" >
-                  Набор массы
+                  <input class="form__programm-type-input" type="radio" name="programm-type" value="weight">
+                  <span class="form__programm-type-text">Набор массы</span>
                 </label>
                 <label class="form__programm-type-label">
                   <input class="form__programm-type-input" type="radio" name="programm-type" value="undecide">
-                  Не знаю (Нужен ваш совет)
+                  <span class="form__programm-type-text">Не знаю (Нужен ваш совет)</span>
                 </label>
               </div>
             </div>
@@ -79,15 +80,21 @@
         <fieldset class="form__owner-contacts">
           <legend class="form__legend">
             <h2 class="form__legend-title container">
-              <span class="form__legend-text">Контактные данные<br> (владельца кота)</span>
+              <span class="form__legend-text">Контактные данные <br> (владельца кота)</span>
             </h2>
           </legend>
           <div class="form__owner-wrapper form-container">
             <label class="form__owner-contacts-label">E-mail:*
-              <input class="form__owner-contacts-input form__owner-contacts-input--mail" type="email" name="owner-mail" placeholder="kuklachev@gmail.com" required>
+              <input class="form__owner-contacts-input" type="email" name="owner-mail" placeholder="kuklachev@gmail.com" required>
+              <svg class = "form__owner-contacts-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </label>
             <label class="form__owner-contacts-label">Телефон:*
-              <input class="form__owner-contacts-input form__owner-contacts-input--phone" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90" required>
+              <input class="form__owner-contacts-input" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90" pattern="8[0-9]{10}"" required>
+                <svg class="form__owner-contacts-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </label>
           </div>
         </fieldset>
@@ -110,43 +117,43 @@
           <div class="form__additionally-wrapper form-container">
             <label class="form__additionally-label">
               <input class="form__additionally-input" type="checkbox" name="sweetener" checked>
-              Cахарозаменитель
+              <span class="form__additionally-text">Cахарозаменитель</span>
             </label>
             <label class="form__additionally-label">
               <input class="form__additionally-input" type="checkbox" name="drinking-water">
-              Питьевая вода
+                <span class="form__additionally-text">Питьевая вода</span>
             </label>
             <label class="form__additionally-label">
               <input class="form__additionally-input" type="checkbox" name="milk">
-              Молоко
+                <span class="form__additionally-text">Молоко</span>
             </label>
             <label class="form__additionally-label">
               <input class="form__additionally-input" type="checkbox" name="vitamins">
-              Витамины
+              <span class="form__additionally-text">Витамины</span>
             </label>
           </div>
         </fieldset>
         <div class="form__footer form-container">
           <button class="form__submit-button button" type="submit">Отправить заявку</button>
-          <p class="form__note">* — Обязательные поля</p>
+          <p class="form__note">* &ndash; Обязательные поля</p>
         </div>
       </form>
       <section class="invite invite--dark-bg">
         <div class="invite__header-wrapper container">
-            <div class="invite__header">
+            <div class="invite__header invite__header--form">
               <h2 class="invite__title">Приглашаем<br>к сотрудничеству<br>дилеров!</h2>
               <address class="invite__address">ул. Большая<br>Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
             </div>
         </div>
         <div class="invite__map">
-          <iframe class="invite__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6088082175913!2d30.325107334481856!3d59.93863317234001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1711636236832!5m2!1sru!2skz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="invite__map-frame invite__map-frame--form" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6088082175913!2d30.325107334481856!3d59.93863317234001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1711636236832!5m2!1sru!2skz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper container">
         <a class="footer__logo" href="index.html">
-          <img class="footer__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Текст логотипа Cat Energy.">
+          <svg class ="footer__logo-text" width="101" height="18" viewBox="0 0 101 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="currentColor"><path d="M1.264 16.538A6.865 6.865 0 0 1 0 12.231V5.846a6.95 6.95 0 0 1 1.185-4.384C2.055.462 3.398 0 5.374 0s3.24.462 4.03 1.308a5.422 5.422 0 0 1 1.186 3.769v1.538H6.718V4.846a3.693 3.693 0 0 0-.238-1.538 1.12 1.12 0 0 0-.456-.473 1.163 1.163 0 0 0-.65-.143c-.553 0-.948.154-1.106.539a4.846 4.846 0 0 0-.237 1.692v8.23a3.111 3.111 0 0 0 .316 1.616c.158.385.553.539 1.106.539s.87-.154 1.027-.539c.18-.52.26-1.067.238-1.615v-1.846h3.872v1.538a5.775 5.775 0 0 1-1.185 3.846c-.79.923-2.134 1.385-4.031 1.385-1.897-.077-3.32-.539-4.11-1.539ZM15.253.23h4.504l3.32 17.54H19.44l-.632-3.693h-2.608l-.632 3.692h-3.715L15.253.231Zm3.24 11.54-.948-6.847-.949 6.846h1.897ZM25.843 3.154h-2.687V.23h9.404v2.846h-2.687v14.692h-4.03V3.154ZM39.752.23h6.955v1.847h-4.505v5.77h3.635v1.768h-3.635v6.462h4.505v1.77h-7.034V.23h.079ZM48.761.23H50.5l5.137 11.616V.231h2.055v17.538h-1.58l-5.217-12v12h-2.134V.231ZM60.063.23h6.954v1.847h-4.504v5.77h3.635v1.768h-3.635v6.462h4.504v1.77h-6.954V.23ZM69.072.23h3.635a6.451 6.451 0 0 1 4.03 1.078c.87.692 1.265 1.923 1.265 3.538 0 2.23-.71 3.616-2.212 4.077l2.528 8.77h-2.45l-2.37-8.231h-1.976v8.23h-2.529V.231h.079Zm3.477 7.54a3.524 3.524 0 0 0 2.292-.616c.474-.385.711-1.154.711-2.308a4.848 4.848 0 0 0-.237-1.692 1.975 1.975 0 0 0-.869-.923 3.69 3.69 0 0 0-1.739-.308h-1.106v5.77h.948v.076ZM81.163 16.462A7.613 7.613 0 0 1 80.058 12V6.154c-.02-1.115.114-2.227.395-3.308a3.916 3.916 0 0 1 1.502-2c.882-.508 1.9-.75 2.924-.692 1.66 0 2.845.384 3.556 1.23a5.77 5.77 0 0 1 1.107 3.847v.615H87.17v-.538a11.03 11.03 0 0 0-.158-1.923 1.533 1.533 0 0 0-.633-1A2.493 2.493 0 0 0 84.878 2a2.417 2.417 0 0 0-1.58.462 1.703 1.703 0 0 0-.632 1.23 14.01 14.01 0 0 0-.159 2.077v6.539a6.818 6.818 0 0 0 .474 2.923c.316.615.949.846 1.897.846a1.96 1.96 0 0 0 1.092-.182c.337-.165.617-.422.805-.741a6.908 6.908 0 0 0 .553-3.077v-1.23h-2.292v-1.77h4.584v8.692h-1.58l-.238-2a3.143 3.143 0 0 1-1.226 1.658 3.288 3.288 0 0 1-2.014.573 4.045 4.045 0 0 1-1.899-.352 3.932 3.932 0 0 1-1.5-1.186ZM94.678 11.615 90.805.308h2.371l2.766 8.461L98.63.308H101l-3.873 11.307v6.154h-2.37v-6.154h-.08Z"/></g><defs><clipPath id="a"><rect width="101" height="18" fill="#fff"/></clipPath></defs></svg>
         </a>
         <ul class="footer__socials-list">
           <li class="socials__item">

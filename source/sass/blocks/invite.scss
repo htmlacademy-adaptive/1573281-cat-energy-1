@@ -9,7 +9,7 @@
 .invite__header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 26px 0;
+  padding: 27px 0;
 
 
   @media (min-width: $tablet-width) {
@@ -20,9 +20,15 @@
     padding: 60px 80px;
     position: absolute;
     width: 565px;
-    top: 95px;
+    top: 87px;
     left: 110px;
     background-color: #ffffff;
+  }
+}
+
+.invite__header--form {
+  @media (min-width: $desktop-width) {
+    top: 99px;
   }
 }
 
@@ -54,6 +60,11 @@
     font-size: 16px;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-left: 45px;
+  }
 }
 
 .invite__map-frame {
@@ -64,5 +75,11 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
+  }
+}
+
+.invite__map-frame--form {
+  @media (min-width: $desktop-width) {
+    height: 410px;
   }
 }

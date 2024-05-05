@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
 
-  &:hover[href] {
+  &:hover[href],
+  &:focus[href] {
+    outline: none;
     cursor: pointer;
     opacity: 0.8;
   }
@@ -12,7 +14,7 @@
   }
 }
 
-.logo-img {
+.logo__img {
   margin-right: 56px;
 
   @media (min-width: $tablet-width) {
@@ -28,7 +30,9 @@
   }
 }
 
-.logo-text {
+.logo__text {
+  color: #111111;
+
   @media (min-width: $desktop-width) {
     width: 118px;
     height: 21px;

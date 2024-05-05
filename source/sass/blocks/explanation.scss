@@ -6,11 +6,17 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .explanation__list {
   display: grid;
-  grid-gap: 22px;
+  grid-gap: 20px;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -20,14 +26,14 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 37px 153px;
+    grid-gap: 37px 60px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px 94px;
+    grid-gap: 30px 80px;
   }
 }
 
@@ -46,12 +52,26 @@
     content: counter(item);
     display: inline-block;
     position: absolute;
-    right: 0;
+    right: 80px;
     top: -40px;
     font-family: $secondary-font;
     font-size: 280px;
     line-height: 280px;
     color: #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+  }
+}
+
+.explanation__item:first-child::before {
+  @media (min-width: $tablet-width) {
+    right: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 20px;
   }
 }
 
@@ -62,6 +82,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    max-width: 250px;
   }
 }
 
@@ -76,8 +97,11 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    display: block;
     margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
   }
 }
 
@@ -97,23 +121,23 @@
 .explanation__icon--leaf::after {
   width: 30px;
   height: 32px;
-  background-image: url("../img/explanataion-leaf.svg");
+  background-image: url("../img/sprite.svg#explanation-leaf");
 }
 
 .explanation__icon--powder::after {
   width: 27px;
   height: 29px;
-  background-image: url("../img/explanataion-powder.svg");
+  background-image: url("../img/sprite.svg#explanataion-powder");
 }
 
 .explanation__icon--cutlery::after {
   width: 25px;
   height: 30px;
-  background-image: url("../img/explanataion-cutlery.svg");
+  background-image: url("../img/sprite.svg#explanataion-cutlery");
 }
 
 .explanation__icon--clock::after {
   width: 27px;
   height: 31px;
-  background-image: url("../img/explanataion-clock.svg");
+  background-image: url("../img/sprite.svg#explanataion-clock");
 }

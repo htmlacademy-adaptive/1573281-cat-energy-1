@@ -11,11 +11,23 @@
 .header--index {
   border: 0;
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .header--catalog {
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
   }
 }
 
@@ -24,15 +36,15 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 50px;
+    padding-top: 53px;
   }
 }
 

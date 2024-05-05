@@ -17,7 +17,8 @@
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
-    gap: 33px;
+    gap: 34px;
+    padding-right: 4px;
     font-size: 18px;
     line-height: 24px;
     background-color: transparent;
@@ -58,6 +59,10 @@
     margin-top: 8px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
+  }
 }
 
 .nav__link--index {
@@ -66,7 +71,9 @@
   }
 }
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link:focus {
+  outline: none;
   opacity: 0.6;
 }
 

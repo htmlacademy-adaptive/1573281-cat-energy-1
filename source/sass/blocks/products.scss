@@ -7,14 +7,15 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 72px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 63px 80px;
+    gap: 78px 80px;
     padding-left: 110px;
     padding-right: 110px;
   }
@@ -43,7 +44,7 @@
     padding-bottom: 40px;
     grid-template-columns: 1fr;
     grid-template-areas: "image" "title" "description" "button";
-    background: linear-gradient(to bottom, #ffffff 15%, #f2f2f2 15%);
+    background: linear-gradient(to bottom, #ffffff 14%, #f2f2f2 14%);
   }
 
   @media (min-width: $desktop-width) {
@@ -52,25 +53,36 @@
 }
 
 .products__link-image-container {
-  display: block;
+  display: flex;
+  align-items: start;
+  justify-content: center;
   grid-area: image;
-  text-align: center;
+
 
   @media (min-width: $tablet-width) {
     height: 206px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+.products__item:nth-child(odd) .products__link-image-container {
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
   }
 }
 
 .products__image {
   display: block;
-  width: 84px;
+  max-width: 84px;
   height: auto;
 
   @media (min-width: $tablet-width) {
@@ -89,9 +101,18 @@
   }
 }
 
+.products__link-image-container:hover,
+.products__link-title-container:hover,
+.products__link-image-container:focus,
+.products__link-title-container:focus {
+  outline: 0;
+  opacity: 0.6;
+}
+
 .products__title {
   max-width: 80px;
   margin: 0;
+  margin-bottom: 15px;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 16px;
@@ -114,9 +135,11 @@
 
 .products__description-list {
   grid-area: description;
+  margin: 0;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 37px;
+    margin-bottom: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,10 +150,16 @@
 .products__desciption-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 5px;
     border-bottom: 1px solid #cdcdcd;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
   }
 }
 
