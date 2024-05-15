@@ -25,6 +25,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 128px;
     margin: unset;
   }
 }
@@ -64,7 +65,7 @@
   }
 }
 
-.socials__link::after {
+.footer__socials-link::after {
   content: "";
   display: block;
   width: 28px;
@@ -72,27 +73,27 @@
   background-color: #666666;
 }
 
-.socials__link:hover::after,
-.socials__link:focus::after,
-.socials__link:focus {
+.footer__socials-link:hover::after,
+.footer__socials-link:focus::after,
+.footer__socials-link:focus {
   outline: none;
   background-color: $bg-color;
 }
 
-.socials__link:active::after {
+.footer__socials-link:active::after {
   background-color: $bg-color;
   opacity: 0.3;
 }
 
-.socials__link--vkontakte::after {
+.footer__socials-link--vkontakte::after {
   mask: url("../img/sprite.svg#vkontakte-icon") no-repeat center;
 }
 
-.socials__link--youtube::after {
+.footer__socials-link--youtube::after {
   mask: url("../img/sprite.svg#youtube-icon") no-repeat center;
 }
 
-.socials__link--telegram::after {
+.footer__socials-link--telegram::after {
   mask: url("../img/sprite.svg#telegram-icon") no-repeat center;
 }
 
@@ -106,8 +107,14 @@
   color: $main-color;
 
   @media (min-width: $tablet-width) {
-    text-align: right;
+    width: 224px;
     gap: 23px;
+    justify-self: flex-end;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 270px;
   }
 }
 

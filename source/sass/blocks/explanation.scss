@@ -75,7 +75,7 @@
   }
 }
 
-.explanation__icon {
+.explanation__description {
   position: relative;
   display: flex;
   align-items: center;
@@ -86,7 +86,7 @@
   }
 }
 
-.explanation__icon::before {
+.explanation__description::before {
   content: "";
   display: block;
   min-width: 60px;
@@ -105,11 +105,10 @@
   }
 }
 
-.explanation__icon::after {
+.explanation__description::after {
   content: "";
   display: block;
   position: absolute;
-  top: 15px;
   left: 15px;
 
   @media (min-width: $tablet-width) {
@@ -118,25 +117,25 @@
   }
 }
 
-.explanation__icon--leaf::after {
+.explanation__description--leaf::after {
   width: 30px;
   height: 32px;
   background-image: url("../img/sprite.svg#explanation-leaf");
 }
 
-.explanation__icon--powder::after {
+.explanation__description--powder::after {
   width: 27px;
   height: 29px;
   background-image: url("../img/sprite.svg#explanataion-powder");
 }
 
-.explanation__icon--cutlery::after {
+.explanation__description--cutlery::after {
   width: 25px;
   height: 30px;
   background-image: url("../img/sprite.svg#explanataion-cutlery");
 }
 
-.explanation__icon--clock::after {
+.explanation__description--clock::after {
   width: 27px;
   height: 31px;
   background-image: url("../img/sprite.svg#explanataion-clock");

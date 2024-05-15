@@ -16,6 +16,8 @@
 
 .logo__img {
   margin-right: 56px;
+  width: 33px;
+  height: 38px;
 
   @media (min-width: $tablet-width) {
     margin-right: 13px;
@@ -31,6 +33,8 @@
 }
 
 .logo__text {
+  width: 101px;
+  height: 18px;
   color: #111111;
 
   @media (min-width: $desktop-width) {
