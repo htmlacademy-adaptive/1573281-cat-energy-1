@@ -3,7 +3,7 @@
   padding: 0;
   position: absolute;
   left: 0;
-  top: 65px;
+  top: 63px;
   width: 100%;
   list-style: none;
   font-family: $secondary-font;
@@ -17,15 +17,22 @@
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
-    gap: 34px;
+    flex-wrap: wrap;
+    column-gap: 34px;
+    row-gap: 10px;
     padding-right: 4px;
+    padding-left: 20px;
+    padding-top: 6px;
     font-size: 18px;
     line-height: 24px;
     background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 31px;
+    padding-left: 150px;
+    padding-top: 0;
+    width: 630px;
+    column-gap: 33px;
     font-size: 20px;
   }
 }
@@ -39,7 +46,9 @@
 }
 
 .nav__list--nojs {
-  position: static;
+  @media (max-width: 320px) {
+    position: static;
+  }
 }
 
 

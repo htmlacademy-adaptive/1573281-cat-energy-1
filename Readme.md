@@ -18,7 +18,7 @@ _`.github`, `.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `pa
 
 ### Памятка
 
-#### 1. Зарегистрируйтесь на Гитхабе
+#### 1. Зарегистрируйтесь на Гитхаб
 
 Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
 

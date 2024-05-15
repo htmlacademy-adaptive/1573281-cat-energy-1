@@ -21,14 +21,14 @@
   line-height: 20px;
   color: #ffffff;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-    url("../img/present-background.jpg");
+    url("../img/present-background.webp");
   background-repeat: no-repeat;
   background-position: top center;
 
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/present-background@2x.jpg");
+      url("../img/present-background@2x.webp");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% 288px;
@@ -47,7 +47,7 @@
     flex-direction: row;
     padding: 71px 110px 69px 421px;
     background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/present-background-tablet.jpg");
+      url("../img/present-background-tablet.webp");
 
     &::before {
       left: 78px;
@@ -55,7 +55,7 @@
 
     @media (min-resolution: 2dppx) {
       background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-        url("../img/present-background-tablet@2x.jpg");
+        url("../img/present-background-tablet@2x.webp");
       background-size: 100% auto;
     }
   }

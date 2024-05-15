@@ -39,7 +39,7 @@
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
+    margin-bottom: 77px;
     padding-left: 30px;
     font-size: 36px;
     line-height: 36px;
@@ -97,7 +97,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 244px;
-    padding-top: 15px;
+    padding-top: 16px;
   }
 }
 

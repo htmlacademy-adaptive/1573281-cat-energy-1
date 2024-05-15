@@ -8,17 +8,17 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    gap: 30px;
+    gap: 25px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    flex-wrap: nowrap;
     gap: 80px;
   }
 }
 
 .programms__item {
-  position: relative;
   padding: 26px;
   padding-left: 20px;
   padding-bottom: 20px;
@@ -38,6 +38,7 @@
   margin-bottom: 22px;
   display: flex;
   align-items: center;
+  position: relative;
   font-family: $secondary-font;
   color: $secondary-color;
   font-size: 24px;
@@ -46,6 +47,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    max-width: 340px;
     margin-bottom: 24px;
     justify-content: space-between;
     align-items: flex-start;
@@ -54,6 +56,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 400px;
     margin-bottom: 40px;
     align-items: center;
     justify-content: start;
@@ -72,19 +75,20 @@
   @media (min-width: $tablet-width) {
     order: 2;
     position: absolute;
-    width: 200px;
+    min-width: 200px;
     height: 200px;
-    right: 0;
-    top: 96px;
+    left: 392px;
+    top: 13px;
     margin-right: 63px;
   }
 
   @media (min-width: $desktop-width) {
     order: 0;
     position: relative;
-    width: 100px;
+    min-width: 100px;
     height: 100px;
     margin-right: 62px;
+    left: 0;
     top: 1px;
   }
 }
@@ -92,19 +96,18 @@
 .programms__item-header--slim::after {
   content: "";
   display: block;
+  position: absolute;
   width: 36px;
   height: 50px;
-  position: absolute;
-  left: 28px;
-  top: 22px;
+  left: 6px;
+  margin-bottom: 12px;
   background-image: url("../img/sprite.svg#programms-slim");
 
   @media (min-width: $tablet-width) {
     width: 140px;
     height: 194px;
-    left: auto;
-    top: 85px;
-    right: 93px;
+    left: 423px;
+    top: 0;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -112,8 +115,8 @@
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 97px;
-    left: 66px;
-    top: 37px;
+    left: 14px;
+    top: auto;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -125,15 +128,14 @@
   width: 67px;
   height: 28px;
   position: absolute;
-  left: 10px;
+  left: -7px;
   background-image: url("../img/sprite.svg#programms-weight");
 
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 112px;
-    left: auto;
-    top: 135px;
-    right: 27px;
+    left: 360px;
+    top: 58px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -141,8 +143,9 @@
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 56px;
-    left: 33px;
-    top: 63px;
+    left: -18px;
+    top: auto;
+    margin-bottom: 8px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -157,7 +160,7 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    width: 340px;
+    max-width: 340px;
     margin-bottom: 55px;
     padding: 0;
     color: $secondary-color;
@@ -167,14 +170,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 457px;
+    max-width: 457px;
     margin-bottom: 30px;
   }
 }
 
 .programms__item-link {
   display: block;
-  position: relative;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
@@ -184,14 +186,18 @@
 
   &::after {
     content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 26px;
+    display: inline-block;
+    margin-left: 18px;
+    padding-top: 14px;
     width: 24px;
     height: 12px;
     background-color: #000000;
     mask-image: url("../img/sprite.svg#programms-arrow");
+
+    @media (min-width: $tablet-width) {
+      margin-left: 25px;
+      padding-top: 20px;
+    }
   }
 
   &:hover::after,
