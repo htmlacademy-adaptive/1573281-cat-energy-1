@@ -1,3 +1,15 @@
+.invite__map {
+  background: url("../img/map-mobile.webp") no-repeat center;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/map-tablet.webp") no-repeat center;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/map-desktop.webp") no-repeat center;
+  }
+}
+
 .invite--dark-bg {
   background-color: #f2f2f2;
 }
