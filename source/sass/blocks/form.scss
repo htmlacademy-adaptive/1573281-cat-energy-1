@@ -390,6 +390,10 @@
 .form__owner-contacts-input:invalid {
   padding: 12px 39px 11px 14px;
   border: 2px solid #ff8282;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 19px;
+  }
 }
 
 .form__owner-contacts-input:invalid + .form__owner-contacts-icon path {
@@ -421,11 +425,12 @@
   outline: none;
 
   @media (min-width: $tablet-width) {
-    padding-left: 20px;
+    padding-left: 19px;
   }
 }
 
-.form__owner-contacts-input:focus + .form__owner-contacts-icon path {
+.form__owner-contacts-input:focus + .form__owner-contacts-icon path,
+.form__owner-contacts-input:placeholder-shown:focus + .form__owner-contacts-icon path {
   stroke: $bg-color;
 }
 
