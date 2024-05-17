@@ -99,13 +99,14 @@
     content: "";
     display: block;
     width: 100%;
+    height: 2px;
     margin-top: 8px;
-    border: 2px solid $bg-color;
+    background-color: $bg-color;
   }
 }
 
 .nav__link--index-current::after {
   @media (min-width: $desktop-width) {
-    border: 2px solid #ffffff;
+    background-color: #ffffff;
   }
 }
